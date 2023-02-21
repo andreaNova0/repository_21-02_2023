@@ -3,8 +3,10 @@
 class Ctelefono {
 private:
 	Cbatteria batteria;
+	int sms, chiamate, tempoTot;
 public:
-	void sms(int numSms);
-	void chiamata(int numChiamata);
+	Ctelefono();
+	Ctelefono(Cbatteria batteria, int sms, int chiamate, int tempoTot);
+	string toString();
 };
 
